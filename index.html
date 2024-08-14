@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- axios link -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- bulma link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script type="module" src="./entry.js"></script>
+    <script type="module" src="./geoLocation.js"></script>
+    <script type="module" src="./fiveDayForecast.js"></script>
+    <script type="module" src="./cityLookUp.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="inputs_section">
+        
+        <div id="city_search_box"></div>
+        <form class="box">
+            <div class="field">
+              <label class="label">Search for a city or town</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="e.g London" />
+              </div>
+            </div>
+        </form>
+        <div id="manual_city_search">
+          <button class="button" id="city_search_button">&#x1F50D Search</button>
+        </div>
+        <div id="get_location_button">
+          <button class="button" id="get_location">&#10146 Current Location</button>
+        </div>
+      </div>
+      <div id="results_section">
+        <div id="current_conditions"></div>
+        <div id="hourly_forecast"></div>
+        <div id="5-day_forecast"></div>
+        <div id="air_pollution"></div>
+        <div id="uv_index"></div>
+      </div>
+    </main>
+  </body>
+</html>
